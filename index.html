@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Bárbara Ruiz">
+    <meta name="description" content="Programacion Basica">
     <title>Guia Basica de lenguajes de programacion</title>
 </head>
 
@@ -17,6 +18,16 @@
             <h2>Contenido</h2>
             <ul>
                 <li><a href="#niveles-abstracion">Niveles de Abstracción</a></li>
+                <li><a href="#bajo-nivel">Lenguajes de Bajo Nivel</a></li>
+                <li><a href="#como-interactuan-los-lenguajes-de-bajo-nivel-con-el-hardware">¿Cómo interactúan los
+                        lenguajes de bajo nivel con el hardware?</a></li>
+                <li><a href="#usos-ejemplo">Usos de los lenguajes de bajo nivel</a></li>
+                <li><a href="#lenguajes-alto-nivel">Lenguajes de Alto Nivel</a></li>
+                <li><a href="#usos-ejemplo">Usos y Ejemplos de los lenguajes de alto nivel</a></li>
+                <li><a href="#detalles-compilacion">Detalles sobre la compilación</a></li>
+                <li><a href="#tipados">¿Qué son los tipados?</a></li>
+                <li><a href="#Paradigmas de programación">Paradigmas de programación</a></li>
+
             </ul>
         </nav>
     </header>
@@ -59,6 +70,10 @@
                         simbólica, instrucciones que luego son traducidas a binario para que el procesador las ejecute.
                     </li>
                 </ul>
+                <h2>¿Cómo funciona la compilación?</h2>
+                <p>Convierte el código escrito por el programador en un archivo ejecutable que el procesador puede
+                    entender directamente, haciéndolo eficiente y optimizado, son mas rápidos y tienen alto rendimiento.
+                </p>
             </article>
 
             <section id="como-interactuan-los-lenguajes-de-bajo-nivel-con-el-hardware">
@@ -108,6 +123,8 @@
                     creas y las transforma a codigo maquina o sea 1 y 0
                     para que pueda ser
                     interpretado por la maquina </p>
+                    <h2>¿Cómo funciona la compilación?</h2>
+                    <p>Son los que se van traduciendo linea por linea  a maquina al momento de la ejecución, lo que los hace de fácil depuración.</p>
                 <blockquote><i><b>Los compiladores son instrucciones que se traducen a codigo maquina</b></i>
                 </blockquote>
             </article>
@@ -147,24 +164,56 @@
                 </article>
             </section>
 
-        <section id="tipados">
+            <section id="tipados">
+                <article>
+                    <h2>¿Qué son los tipados?</h2>
+                    <p>Son el tipo de sintaxis de código que usas para definir un tipo de dato, lo que seria definir una
+                        variable y asignarle un valor </p>
+                    <h3>Dentos de los compiladores hay tipos de tipados</h3>
+                    <li><b>Tipado estático:</b> Siempre tienen un tipo de tipado, sea débil o fuerte, o sea aquellos que
+                        no permiten ningún dato a la interpretación </li>
+                    <p>Ejemplos: Java, C++, C#, Go</p>
+                    <li><b>Tipado dinámico:</b>Son aquellos que no tienen tipado o tienen un tipado débil, aquel que te
+                        permite que las variables no sean definidas con el valor que se va a almacenar dentro del si no
+                        que lo intuye automáticamente dependiendo de la variable a definir.</li>
+                    <p>Ejemplos: Python, JavaScript, Ruby</p>
+                </article>
+            </section>
+        </section>
+        <section id="Paradigmas de programación">
             <article>
-                <h2>¿Qué son los tipados?</h2>
-                <p>Son el tipo de sintaxis de código que usas para definir un tipo de dato, lo que seria definir una variable y asignarle un valor </p>
-                <h3>Dentos de los compiladores hay tipos de tipados</h3>
-                <li><b>Tipado estático:</b> Siempre tienen un tipo de tipado, sea débil o fuerte, o sea aquellos que no  permiten ningún dato a la interpretación </li>
-                <p>Ejemplos: Java, C++, C#, Go</p>
-                <li><b>Tipado dinámico:</b>Son aquellos que no tienen tipado o  tienen un tipado débil, aquel que te permite que las variables no sean definidas con el valor que se va a almacenar dentro del si no que lo intuye automáticamente dependiendo de la variable a definir.</li>
-                <p>Ejemplos: Python, JavaScript, Ruby</p>
+                <h2>Paradigmas de programación</h2>
+                <p>Los paradigmas de programación son un conjunto de requisitos y
+                    principios interrelacionados que se utilizan en el desarrollo de
+                    software influyen en el estilo de un programa
+                </p>
+                <table>
+                    <tr>
+                        <th>Paradigma</th>
+                        <th>Características</th>
+                    </tr>
+                    <tr>
+                        <td>Imperativo (Procedimental)</td>
+                        <td>Consiste en brindar instrucciones claras al al maquina de como realizar esa tarea en
+                            especifico agrupando las instrucciones.</td>
+                    </tr>
+                    <tr>
+                        <td>Funcional</td>
+                        <td>Se caracteriza pro dividir la mayor cantidad de tares en funciones para luego poder ser
+                            usadas repetidamente en procesos diferentes enfocados en sistemas concurrentes.</td>
+                    </tr>
+                    <tr>
+                        <td>Orientado a Objetos (OOP)</td>
+                        <td>Organizar el código en bloques que se dividen en base a atributos y métodos relacionados al
+                            objeto, siendo un paradigma robusto.</td>
+                    </tr>
+                    <tr>
+                        <td>Multiparadigma </td>
+                        <td>Combina elementos de diferentes paradigmas de programación.</td>
+                    </tr>
+                </table>
             </article>
         </section>
-        </section>
-
-        
-
-
-
-
 
     </main>
 </body>
