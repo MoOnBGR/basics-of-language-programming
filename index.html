@@ -7,215 +7,404 @@
     <meta name="author" content="Bárbara Ruiz">
     <meta name="description" content="Programacion Basica">
     <title>Guia Basica de lenguajes de programacion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=PT Serif&display=swap" rel="stylesheet" />
 </head>
 
+
+<header>
+    <div class="row navbar">
+        <nav class="navbar navbar-expand-lg encabezado">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="#"><strong>Ruta de Aprendizaje</strong></a>
+            </div>
+    </div>
+</header>
+
 <body>
-    <header>
-        <h1>Ruta de aprendizaje básica</h1>
-        <p>Esta es una guia basica de lenguajes de programacion para tener un contexto inicial de los conceptos
-            fundamentales.</p>
-        <nav>
-            <h2>Contenido</h2>
-            <ul>
-                <li><a href="#niveles-abstracion">Niveles de Abstracción</a></li>
-                <li><a href="#bajo-nivel">Lenguajes de Bajo Nivel</a></li>
-                <li><a href="#como-interactuan-los-lenguajes-de-bajo-nivel-con-el-hardware">¿Cómo interactúan los
-                        lenguajes de bajo nivel con el hardware?</a></li>
-                <li><a href="#usos-ejemplo">Usos de los lenguajes de bajo nivel</a></li>
-                <li><a href="#lenguajes-alto-nivel">Lenguajes de Alto Nivel</a></li>
-                <li><a href="#usos-ejemplo">Usos y Ejemplos de los lenguajes de alto nivel</a></li>
-                <li><a href="#detalles-compilacion">Detalles sobre la compilación</a></li>
-                <li><a href="#tipados">¿Qué son los tipados?</a></li>
-                <li><a href="#Paradigmas de programación">Paradigmas de programación</a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="niveles-abstracion">
-            <article>
-                <h2>Niveles de Abstracción</h2>
-                <h3>¿Qué es la abstracción en programación?</h3>
-                <p>Es la capacidad del código para simplificar conceptos abstractos del mundo real, en otras palabras,
-                    permite manejar ideas complejas de forma simple y a veces fragmentadas
-                    esto significa que el código puede hacer que la máquina comprenda mejor el mundo real.
-                    Un ejemplo de esto se encuentra en la programación Orientada a Objetos.
-                    POO funciona encapsulando datos en unidades llamadas clases, estas clases (que se pueden crear en
-                    Java y otros lenguajes) permiten, mediante constructores, variables, y el uso
-                    de getters y setters, representar y manipular propiedades de un concepto de la vida real y sus
-                    cualidades.
-                    Así se pueden establecer las características y funciones que debería tener un objeto, facilitando su
-                    uso en la programación.
-                    A partir de esta idea, podemos decir que existen lenguajes con diferentes grados de abstracción</p>
-            </article>
+    
+    <section id="img-principal" style="background-image: url('img/fondo-encabezado.jpg');">
+        <section id="introduccion">
+            <H2><strong>Esta es una guia basica de lenguajes de programacion para tener un contexto inicial de los
+                    conceptos
+                    fundamentales.</strong>
+            </H2>
         </section>
+    </section>
 
 
-        <section id="bajo-nivel">
-            <article>
-                <h2>Lenguajes de Bajo Nivel</h2>
-                <h3>¿Qué son?</h3>
-                <p>Son aquellos que interactúan directamente con el hardware.
-                    Esto los convierte en una categoría que requiere gran atención al detalle.</p>
-                <h3>Dentro de los lenguajes de bajo nivel se encuentran:</h3>
-                <ul>
-                    <li><b>Binario:</b> El sistema numérico base 2, compuesto por 0s y 1s, que es el lenguaje más básico
-                        que la computadora puede entender directamente ya que cada 1 y 0 significa la presecia de
-                        voltaje(Encendido 1) o la asusencia de voltaje (apagado 0).</li>
-                    <li><b>Lenguaje de máquina:</b> Es el lenguaje más básico, compuesto por instrucciones binarias (0s
-                        y 1s) que la computadora puede entender directamente. Es específico para cada tipo de
-                        procesador.</li>
-                    <li><b>Lenguaje ensamblador:</b> Usa mnemónicos (palabras o abreviaturas) para representar, de forma
-                        simbólica, instrucciones que luego son traducidas a binario para que el procesador las ejecute.
-                    </li>
-                </ul>
-                <h2>¿Cómo funciona la compilación?</h2>
-                <p>Convierte el código escrito por el programador en un archivo ejecutable que el procesador puede
-                    entender directamente, haciéndolo eficiente y optimizado, son mas rápidos y tienen alto rendimiento.
-                </p>
-            </article>
-
-            <section id="como-interactuan-los-lenguajes-de-bajo-nivel-con-el-hardware">
-                <article>
-                    <h2>¿Cómo interactúan los lenguajes de bajo nivel con el hardware?</h2>
-                    <p>Al ser patrones binarios, la Unidad de Control (CU) dentro de la CPU interpreta cada instrucción.
-                        Cada vez que recibe un 1 o un 0, se activan o desactivan circuitos eléctricos internos, como las
-                        puertas lógicas de los transistores
-                        esto provoca que el hardware realice tareas específicas, por ejemplo, leer la memoria RAM.</p>
-                </article>
-            </section>
-
-            <section id="usos-ejemplo">
-                <article>
-                    <h2>Usos de los lenguajes de bajo nivel</h2>
-                    <ul>
-                        <li><b>Drivers</b>Son programas que le indican al sistema operativo cómo comunicarse con el
-                            hardware.</li>
-                        <li><b>Sistemas Operativos (OS)</b>Actúan como traductores entre el usuario, los programas y el
-                            hardware.</li>
-                        <li><b>Firmware</b>Es el software que controla el comportamiento de los dispositivos hardware,
-                            como los BIOS o UEFI.</li>
-                    </ul>
-                    <h3>Ejemplo</h3>
-                    <h3>Bios</h3>
-                    <p>El El Basic Input/Output System es una secuencia de código de ejecución almacenada en un chip de
-                        la placa base.
-                        Su función es reconocer lo que está conectado a la placa base y permitir que el sistema
-                        arranque.</p>
-                    <h3>¿Cómo lo hace?</h3>
-                    <p>El BIOS envía pequeñas corrientes eléctricas a las ranuras y conectores de la placa base. Esto le
-                        permite detectar la presencia física de los componentes, verificar que los voltajes sean
-                        correctos
-                        y obtener información sobre sus características y capacidades para asi confirma los parametros
-                        necesarios y asigna los recursos. Siendo un ejemplo muy claro de uso de lenguajes de bajo nivel
-                    </p>
-                </article>
-            </section>
-        </section>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="Info-Content">
+                    <section id="niveles-abstracion">
+                        <article>
+                            <h2>Niveles de Abstracción</h2>
+                            <h3>¿Qué es la abstracción en programación?</h3>
+                            <p>Es la capacidad del código para simplificar conceptos abstractos del mundo real, en otras
+                                palabras,
+                                permite manejar ideas complejas de forma simple y a veces fragmentadas
+                                esto significa que el código puede hacer que la máquina comprenda mejor el mundo real.
+                                Un ejemplo de esto se encuentra en la programación Orientada a Objetos.
+                                POO funciona encapsulando datos en unidades llamadas clases, estas clases (que se pueden
+                                crear en
+                                Java y otros lenguajes) permiten, mediante constructores, variables, y el uso
+                                de getters y setters, representar y manipular propiedades de un concepto de la vida real
+                                y sus
+                                cualidades.
+                                Así se pueden establecer las características y funciones que debería tener un objeto,
+                                facilitando su
+                                uso en la programación.
+                                A partir de esta idea, podemos decir que existen lenguajes con diferentes grados de
+                                abstracción</p>
+                        </article>
+                    </section>
 
 
-        <section id="lenguajes-alto-nivel">
-            <article>
-                <h2>Lenguajes de Alto Nivel</h2>
-                <h3>¿Qué son?</h3>
-                <p>Son aquellos más compresibles para el ser humano, son compiladores que toman las instrucciones que
-                    creas y las transforma a codigo maquina o sea 1 y 0
-                    para que pueda ser
-                    interpretado por la maquina </p>
-                    <h2>¿Cómo funciona la compilación?</h2>
-                    <p>Son los que se van traduciendo linea por linea  a maquina al momento de la ejecución, lo que los hace de fácil depuración.</p>
-                <blockquote><i><b>Los compiladores son instrucciones que se traducen a codigo maquina</b></i>
-                </blockquote>
-            </article>
-            <section id="usos-ejemplo">
-                <article>
-                    <h2>Usos y Ejemplos</h2>
-                    <p>Los lenguajes de alto nivel se utilizan para desarrollar una amplia variedad de aplicaciones,
-                        desde
-                        software de escritorio hasta aplicaciones web y móviles. Algunos ejemplos populares incluyen:
-                    </p>
-                    <ul>
-                        <li><b>Python:</b> Conocido por su simplicidad </li>
-                        <li><b>Java:</b> Ampliamente utilizado en aplicaciones empresariales y desarrollo de Android.
-                        </li>
-                </article>
-            </section>
 
-            <section id="detalles-compilacion">
-                <article>
-                    <h2>Detalles sobre la compilación</h2>
-                    <p>En el proceso que toma la compilación hay varios pasos que realiza internamente el compilador</p>
-                    <ul>
-                        <li><b>Análisis léxico:</b> Es un proceso donde se analiza la sintaxis del lenguaje, para así
-                            evitar errores y las instrucciones estén estandarizadas </li>
-                        <li><b>Análisis sintáctico:</b> El compilador divide el codigo en tokens /minifaragmentos
-                            ejemplo divide por bloques cada if o else y con estos tokens arma un albol sematico donde
-                            cada nodo es una operación </li>
-                        <P><i>¿Qué es un árbol semántico?</i></P>
-                        <p>Es una estructura jerárquica que representa las relaciones entre conceptos </p>
-                        <li><b>Análisis semántico:</b> Empieza a pensar a analizar la información de cada bloque
-                            construido y a entender el significado de cada operación </li>
-                        <li><b>Optimización:</b> Al haber finalizado la sintaxis y revisar que hace el código se encarga
-                            de buscar formas más fáciles de ejecutarlo y reducir al cantidad de memoria utilizada.</li>
-                        <li><b>Generación de código:</b> Se produce el código objeto que puede ser ejecutado por la
-                            máquina.</li>
-                    </ul>
-                </article>
-            </section>
+                    <section id="bajo-nivel">
+                        <article>
+                            <h2>Lenguajes de Bajo Nivel</h2>
+                            <h3>¿Qué son?</h3>
+                            <p>Son aquellos que interactúan directamente con el hardware.
+                                Esto los convierte en una categoría que requiere gran atención al detalle.</p>
+                            <h3>Dentro de los lenguajes de bajo nivel se encuentran:</h3>
+                            <ul>
+                                <li><b>Binario:</b> El sistema numérico base 2, compuesto por 0s y 1s, que es el
+                                    lenguaje más básico
+                                    que la computadora puede entender directamente ya que cada 1 y 0 significa la
+                                    presecia de
+                                    voltaje(Encendido 1) o la asusencia de voltaje (apagado 0).</li>
+                                <li><b>Lenguaje de máquina:</b> Es el lenguaje más básico, compuesto por instrucciones
+                                    binarias (0s
+                                    y 1s) que la computadora puede entender directamente. Es específico para cada tipo
+                                    de
+                                    procesador.</li>
+                                <li><b>Lenguaje ensamblador:</b> Usa mnemónicos (palabras o abreviaturas) para
+                                    representar, de forma
+                                    simbólica, instrucciones que luego son traducidas a binario para que el procesador
+                                    las ejecute.
+                                </li>
+                            </ul>
+                            <h2>¿Cómo funciona la compilación?</h2>
+                            <p>Convierte el código escrito por el programador en un archivo ejecutable que el procesador
+                                puede
+                                entender directamente, haciéndolo eficiente y optimizado, son mas rápidos y tienen alto
+                                rendimiento.
+                            </p>
+                        </article>
 
-            <section id="tipados">
-                <article>
-                    <h2>¿Qué son los tipados?</h2>
-                    <p>Son el tipo de sintaxis de código que usas para definir un tipo de dato, lo que seria definir una
-                        variable y asignarle un valor </p>
-                    <h3>Dentos de los compiladores hay tipos de tipados</h3>
-                    <li><b>Tipado estático:</b> Siempre tienen un tipo de tipado, sea débil o fuerte, o sea aquellos que
-                        no permiten ningún dato a la interpretación </li>
-                    <p>Ejemplos: Java, C++, C#, Go</p>
-                    <li><b>Tipado dinámico:</b>Son aquellos que no tienen tipado o tienen un tipado débil, aquel que te
-                        permite que las variables no sean definidas con el valor que se va a almacenar dentro del si no
-                        que lo intuye automáticamente dependiendo de la variable a definir.</li>
-                    <p>Ejemplos: Python, JavaScript, Ruby</p>
-                </article>
-            </section>
-        </section>
-        <section id="Paradigmas de programación">
-            <article>
-                <h2>Paradigmas de programación</h2>
-                <p>Los paradigmas de programación son un conjunto de requisitos y
-                    principios interrelacionados que se utilizan en el desarrollo de
-                    software influyen en el estilo de un programa
-                </p>
-                <table>
-                    <tr>
-                        <th>Paradigma</th>
-                        <th>Características</th>
-                    </tr>
-                    <tr>
-                        <td>Imperativo (Procedimental)</td>
-                        <td>Consiste en brindar instrucciones claras al al maquina de como realizar esa tarea en
-                            especifico agrupando las instrucciones.</td>
-                    </tr>
-                    <tr>
-                        <td>Funcional</td>
-                        <td>Se caracteriza pro dividir la mayor cantidad de tares en funciones para luego poder ser
-                            usadas repetidamente en procesos diferentes enfocados en sistemas concurrentes.</td>
-                    </tr>
-                    <tr>
-                        <td>Orientado a Objetos (OOP)</td>
-                        <td>Organizar el código en bloques que se dividen en base a atributos y métodos relacionados al
-                            objeto, siendo un paradigma robusto.</td>
-                    </tr>
-                    <tr>
-                        <td>Multiparadigma </td>
-                        <td>Combina elementos de diferentes paradigmas de programación.</td>
-                    </tr>
-                </table>
-            </article>
-        </section>
+                        <section id="como-interactuan-los-lenguajes-de-bajo-nivel-con-el-hardware">
+                            <article>
+                                <h2>¿Cómo interactúan los lenguajes de bajo nivel con el hardware?</h2>
+                                <p>Al ser patrones binarios, la Unidad de Control (CU) dentro de la CPU interpreta cada
+                                    instrucción.
+                                    Cada vez que recibe un 1 o un 0, se activan o desactivan circuitos eléctricos
+                                    internos, como las
+                                    puertas lógicas de los transistores
+                                    esto provoca que el hardware realice tareas específicas, por ejemplo, leer la
+                                    memoria RAM.</p>
+                            </article>
+                        </section>
 
-    </main>
+                        <section id="usos-ejemplo">
+                            <article>
+                                <h2>Usos de los lenguajes de bajo nivel</h2>
+                                <ul>
+                                    <li><b>Drivers</b>Son programas que le indican al sistema operativo cómo comunicarse
+                                        con el
+                                        hardware.</li>
+                                    <li><b>Sistemas Operativos (OS)</b>Actúan como traductores entre el usuario, los
+                                        programas y el
+                                        hardware.</li>
+                                    <li><b>Firmware</b>Es el software que controla el comportamiento de los dispositivos
+                                        hardware,
+                                        como los BIOS o UEFI.</li>
+                                </ul>
+                                <h3>Ejemplo</h3>
+                                <h3>Bios</h3>
+                                <p>El El Basic Input/Output System es una secuencia de código de ejecución almacenada en
+                                    un chip de
+                                    la placa base.
+                                    Su función es reconocer lo que está conectado a la placa base y permitir que el
+                                    sistema
+                                    arranque.</p>
+                                <h3>¿Cómo lo hace?</h3>
+                                <p>El BIOS envía pequeñas corrientes eléctricas a las ranuras y conectores de la placa
+                                    base. Esto le
+                                    permite detectar la presencia física de los componentes, verificar que los voltajes
+                                    sean
+                                    correctos
+                                    y obtener información sobre sus características y capacidades para asi confirma los
+                                    parametros
+                                    necesarios y asigna los recursos. Siendo un ejemplo muy claro de uso de lenguajes de
+                                    bajo nivel
+                                </p>
+                            </article>
+                        </section>
+                    </section>
+
+
+                    <section id="lenguajes-alto-nivel">
+                        <article>
+                            <h2>Lenguajes de Alto Nivel</h2>
+                            <h3>¿Qué son?</h3>
+                            <p>Son aquellos más compresibles para el ser humano, son compiladores que toman las
+                                instrucciones que
+                                creas y las transforma a codigo maquina o sea 1 y 0
+                                para que pueda ser
+                                interpretado por la maquina </p>
+                            <h2>¿Cómo funciona la compilación?</h2>
+                            <p>Son los que se van traduciendo linea por linea a maquina al momento de la ejecución, lo
+                                que los hace
+                                de fácil depuración.</p>
+                            <blockquote><i><b>Los compiladores son instrucciones que se traducen a codigo
+                                        maquina</b></i>
+                            </blockquote>
+                        </article>
+                        <section id="usos-ejemplo">
+                            <article>
+                                <h2>Usos y Ejemplos</h2>
+                                <p>Los lenguajes de alto nivel se utilizan para desarrollar una amplia variedad de
+                                    aplicaciones,
+                                    desde
+                                    software de escritorio hasta aplicaciones web y móviles. Algunos ejemplos populares
+                                    incluyen:
+                                </p>
+                                <ul>
+                                    <li><b>Python:</b> Conocido por su simplicidad </li>
+                                    <li><b>Java:</b> Ampliamente utilizado en aplicaciones empresariales y desarrollo de
+                                        Android.
+                                    </li>
+                            </article>
+                        </section>
+
+                        <section id="detalles-compilacion">
+                            <article>
+                                <h2>Detalles sobre la compilación</h2>
+                                <p>En el proceso que toma la compilación hay varios pasos que realiza internamente el
+                                    compilador</p>
+                                <ul>
+                                    <li><b>Análisis léxico:</b> Es un proceso donde se analiza la sintaxis del lenguaje,
+                                        para así
+                                        evitar errores y las instrucciones estén estandarizadas </li>
+                                    <li><b>Análisis sintáctico:</b> El compilador divide el codigo en tokens
+                                        /minifaragmentos
+                                        ejemplo divide por bloques cada if o else y con estos tokens arma un albol
+                                        sematico donde
+                                        cada nodo es una operación </li>
+                                    <P><i>¿Qué es un árbol semántico?</i></P>
+                                    <p>Es una estructura jerárquica que representa las relaciones entre conceptos </p>
+                                    <li><b>Análisis semántico:</b> Empieza a pensar a analizar la información de cada
+                                        bloque
+                                        construido y a entender el significado de cada operación </li>
+                                    <li><b>Optimización:</b> Al haber finalizado la sintaxis y revisar que hace el
+                                        código se encarga
+                                        de buscar formas más fáciles de ejecutarlo y reducir al cantidad de memoria
+                                        utilizada.</li>
+                                    <li><b>Generación de código:</b> Se produce el código objeto que puede ser ejecutado
+                                        por la
+                                        máquina.</li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <section id="tipados">
+                            <article>
+                                <h2>¿Qué son los tipados?</h2>
+                                <p>Son el tipo de sintaxis de código que usas para definir un tipo de dato, lo que seria
+                                    definir una
+                                    variable y asignarle un valor </p>
+                                <h3>Dentos de los compiladores hay tipos de tipados</h3>
+                                <li><b>Tipado estático:</b> Siempre tienen un tipo de tipado, sea débil o fuerte, o sea
+                                    aquellos que
+                                    no permiten ningún dato a la interpretación </li>
+                                <p>Ejemplos: Java, C++, C#, Go</p>
+                                <li><b>Tipado dinámico:</b>Son aquellos que no tienen tipado o tienen un tipado débil,
+                                    aquel que te
+                                    permite que las variables no sean definidas con el valor que se va a almacenar
+                                    dentro del si no
+                                    que lo intuye automáticamente dependiendo de la variable a definir.</li>
+                                <p>Ejemplos: Python, JavaScript, Ruby</p>
+                            </article>
+                        </section>
+                    </section>
+                    <section id="Paradigmas de programación">
+                        <article>
+                            <h2>Paradigmas de programación</h2>
+                            <p>Los paradigmas de programación son un conjunto de requisitos y
+                                principios interrelacionados que se utilizan en el desarrollo de
+                                software influyen en el estilo de un programa
+                            </p>
+                            <table>
+                                <tr>
+                                    <th>Paradigma</th>
+                                    <th>Características</th>
+                                </tr>
+                                <tr>
+                                    <td>Imperativo (Procedimental)</td>
+                                    <td>Consiste en brindar instrucciones claras al al maquina de como realizar esa
+                                        tarea en
+                                        especifico agrupando las instrucciones.</td>
+                                </tr>
+                                <tr>
+                                    <td>Funcional</td>
+                                    <td>Se caracteriza pro dividir la mayor cantidad de tares en funciones para luego
+                                        poder ser
+                                        usadas repetidamente en procesos diferentes enfocados en sistemas concurrentes.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Orientado a Objetos (OOP)</td>
+                                    <td>Organizar el código en bloques que se dividen en base a atributos y métodos
+                                        relacionados al
+                                        objeto, siendo un paradigma robusto.</td>
+                                </tr>
+                                <tr>
+                                    <td>Multiparadigma </td>
+                                    <td>Combina elementos de diferentes paradigmas de programación.</td>
+                                </tr>
+                            </table>
+                        </article>
+                    </section>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="indice-Content">
+                    <nav class="sidebar">
+                        <h2>Contenido</h2>
+                        <ul>
+                            <li><a href="#introduccion">Introducción</a></li>
+                            <li><a href="#niveles-abstracion">Niveles de Abstracción</a></li>
+                            <li><a href="#bajo-nivel">Lenguajes de Bajo Nivel</a></li>
+                            <li><a href="#como-interactuan-los-lenguajes-de-bajo-nivel-con-el-hardware">¿Cómo
+                                    interactúan los
+                                    lenguajes de bajo nivel con el hardware?</a></li>
+                            <li><a href="#usos-ejemplo">Usos de los lenguajes de bajo nivel</a></li>
+                            <li><a href="#lenguajes-alto-nivel">Lenguajes de Alto Nivel</a></li>
+                            <li><a href="#usos-ejemplo">Usos y Ejemplos de los lenguajes de alto nivel</a></li>
+                            <li><a href="#detalles-coñmpilacion">Detalles sobre la compilación</a></li>
+                            <li><a href="#tipados">¿Qué son los tipados?</a></li>
+                            <li><a href="#Paradigmas de programación">Paradigmas de programación</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="visual-Content">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-Content">
+                    footer-Content
+
+                    <footer>
+                        <div class="container">
+                            <div class="row g-5">
+
+                                <div class="col-lg-12">
+                                    <div class="footer-logo">
+                                        <span class="brand-nombre">Hospital General GYA</span>
+                                        <span class="brand-sub">Salud · Calidad · Innovación</span>
+                                    </div>
+                                    <p class="footer-descripcion">
+                                        Somos una alternativa médica integral comprometida con la salud de cada
+                                        paciente, combinando excelencia clínica, tecnología y calidez humana.
+                                    </p>
+                                </div>
+
+
+                                <div class="col-sm-6 col-lg-2">
+                                    <div class="footer-titulo-seccion">Links de Interés</div>
+                                    <ul class="footer-links">
+                                        <li><a href="#">Biblioteca médica virtual</a></li>
+                                        <li><a href="#">Ecosistema</a></li>
+                                        <li><a href="Servicios_medicos.html">Servicios Médicos</a></li>
+                                        <li><a href="#">Especialidades Médicas</a></li>
+                                        <li><a href="#">Aseguradoras</a></li>
+                                        <li><a href="#">Centros de Especialidad</a></li>
+                                        <li><a href="#">Maternidad</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="footer-titulo-seccion">Contáctenos</div>
+                                    <ul class="footer-links">
+                                        <li><a href="#">WhatsApp</a></li>
+                                        <li><a href="tel:+50625219595">Teléfono</a></li>
+                                        <li><a href="#">Cotización y Consultas</a></li>
+                                        <li><a href="#">Trabaje con nosotros</a></li>
+                                        <li><a href="#">Contraloría de Servicios_medicos.html</a></li>
+                                        <li><a href="#">Registros Médicos</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="footer-titulo-seccion">Contenido</div>
+                                    <ul class="footer-links">
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Noticias</a></li>
+                                        <li><a href="#">Testimoniales</a></li>
+                                    </ul>
+
+                                    <div class="mt-4">
+                                        <div class="footer-titulo-seccion">Accesos rápidos</div>
+                                        <div class="d-flex flex-column gap-2 mt-1">
+                                            <a href="#" class="text-decoration-none">
+                                                <span class="badge w-100 py-2 text-start"
+                                                    style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.75);font-size:0.82rem;">
+                                                    <i class="bi bi-whatsapp me-2" style="color:#25D366;"></i>WhatsApp
+                                                </span>
+                                            </a>
+                                            <a href="tel:+50625219595" class="text-decoration-none">
+                                                <span class="badge w-100 py-2 text-start"
+                                                    style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.75);font-size:0.82rem;">
+                                                    <i class="bi bi-telephone me-2"
+                                                        style="color:var(gris-texto);"></i>Tel.: 2521-9595
+                                                </span>
+                                            </a>
+                                            <a href="formulario-reserva-citas.html" class="text-decoration-none">
+                                                <span class="badge w-100 py-2 text-start"
+                                                    style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.75);font-size:0.82rem;">
+                                                    <i class="bi bi-calendar-check me-2"
+                                                        style="color:var(gris-texto);"></i>Agendar cita
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="footer-divider">
+                                <div
+                                    class="d-flex flex-wrap justify-content-between align-items-center footer-bottom gap-2">
+                                    <span>+506 2521-9595 &nbsp;|&nbsp; info@hospitalgya.cr &nbsp;|&nbsp; Todos los
+                                        derechos reservados ©
+                                        2025</span>
+                                    <span><a href="#">Política de Privacidad</a></span>
+                                    <span><a href="#">Desarollado por GYA</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
