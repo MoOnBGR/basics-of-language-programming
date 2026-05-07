@@ -1,19 +1,16 @@
-
-
 /* Estilos generales */
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: #F2F2F2;
 }
 
 /*Distribucion de los elementos*/
 
 .Info-Content,
-.indice-Content,
-.visual-Content,
-.footer-Content {
+.indice-Content {
     padding: 1rem;
     box-sizing: border-box;
     width: 100%;
@@ -32,30 +29,25 @@ body{
 }
 
 .footer-Content {
-    width: 100%;
+   width: max-content;
 }
 
 .indice-Content {
-    padding-top: 80px;
+    padding-top: 600px;
     text-align: center;
-    height: 80%;
 }
 
-.visual-Content {
-    padding-top: 80px;
-    text-align: center;
-    height: 20%;
-}
+
 
 /*Diseño barra superior*/
 .navbar {
     background-color: #F29E38;
     padding-left: 2%;
     font-family: 'PT Serif';
-    
 }
+
 .encabezado .navbar-brand {
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 
@@ -72,10 +64,13 @@ body{
     overflow: hidden;
     padding-top: 4rem;
     height: 40vh;
+    border-bottom-right-radius: 45%;
+
+
 }
 
 #introduccion {
-    color: #ffffff; 
+    color: #ffffff;
     max-width: 900px;
     padding-left: 4rem;
     text-align: center;
@@ -91,11 +86,82 @@ body{
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 3rem;
+    padding-bottom: 20%;
+
 }
 
 .Info-Content h2 {
     font-family: 'PT Serif';
     color: #99B6F2;
     font-weight: 700;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+
+.Info-Content h3 {
+    font-family: 'PT Serif';
+    font-weight: 300;
+    color: #adc4f3;
+}
+
+
+.Info-Content h4 {
+    font-family: 'PT Serif';
+    padding-top: 1rem;
+}
+
+.Info-Content p {
+    font-family: 'PT Serif';
+    padding-left: 2rem;
+}
+
+.Info-Content ul {
+    font-family: 'PT Serif';
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.Info-Content table {
+    font-family: 'PT Serif';
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+
+.Info-Content th {
+    background-color: #F29E38;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-bottom-right-radius: 10%;
+}
+
+.Info-Content td {
+    color: #000000;
+    padding: 0.5rem;
+}
+
+.Info-Content table {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: ;
+}
+
+.indice-Content .nav-link {
+    font-family: 'PT Serif';
+    font-size: 0.92rem;
+    color: #D96690;
+    padding: 0.5rem 0.85rem;
+}
+
+.indice-Content .nav-link:hover {
+    color:  #d96690a1;
+}
+
+footer {
+ background-color: #D96690;
+}
+
+.contenido-tabla{
+
+ padding-top: 10%;
+}
+
