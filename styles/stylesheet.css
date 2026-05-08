@@ -5,6 +5,7 @@ html {
 
 body {
     background-color: #F2F2F2;
+    font-family: 'PT Serif';
 }
 
 /*Distribucion de los elementos*/
@@ -34,16 +35,21 @@ body {
 
 .indice-Content {
     padding-top: 600px;
-    text-align: center;
 }
 
+.Info-Content {
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+
+}
 
 
 /*Diseño barra superior*/
 .navbar {
     background-color: #F29E38;
     padding-left: 2%;
-    font-family: 'PT Serif';
 }
 
 .encabezado .navbar-brand {
@@ -76,22 +82,13 @@ body {
     text-align: center;
     border-radius: 8px;
     text-align: left;
-    font-family: 'PT Serif';
     position: relative;
     background-color: #f29e381f;
 }
 
 /*contenido*/
-.Info-Content {
-    text-align: justify;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 20%;
-
-}
 
 .Info-Content h2 {
-    font-family: 'PT Serif';
     color: #99B6F2;
     font-weight: 700;
     padding-top: 1rem;
@@ -99,30 +96,31 @@ body {
 }
 
 .Info-Content h3 {
-    font-family: 'PT Serif';
     font-weight: 300;
     color: #adc4f3;
 }
 
 
 .Info-Content h4 {
-    font-family: 'PT Serif';
     padding-top: 1rem;
 }
 
 .Info-Content p {
-    font-family: 'PT Serif';
     padding-left: 2rem;
 }
 
 .Info-Content ul {
-    font-family: 'PT Serif';
     padding-left: 2rem;
     padding-top: 1rem;
 }
 
+/*Estilo tabla*/
+
+.contenido-tabla {
+    padding-top: 10%;
+}
+
 .Info-Content table {
-    font-family: 'PT Serif';
     padding-left: 4rem;
     padding-top: 2rem;
 }
@@ -139,10 +137,9 @@ body {
     padding: 0.5rem;
 }
 
-
+/*indice*/
 
 .indice-Content .nav-link {
-    font-family: 'PT Serif';
     font-size: 0.92rem;
     color: #D96690;
     padding: 0.5rem 0.85rem;
@@ -152,14 +149,13 @@ body {
     color: #d96690a1;
 }
 
+
+
 footer {
     background-color: #D96690;
-     padding-top: 30px;
-       padding-bottom: 20px;
-       color: #fefefe;
-       font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #fefefe;
+    font-weight: 700;
 }
 
-.contenido-tabla {
-    padding-top: 10%;
-}
