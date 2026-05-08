@@ -29,7 +29,7 @@ body {
 }
 
 .footer-Content {
-   width: max-content;
+    width: max-content;
 }
 
 .indice-Content {
@@ -139,11 +139,7 @@ body {
     padding: 0.5rem;
 }
 
-.Info-Content table {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: ;
-}
+
 
 .indice-Content .nav-link {
     font-family: 'PT Serif';
@@ -153,15 +149,17 @@ body {
 }
 
 .indice-Content .nav-link:hover {
-    color:  #d96690a1;
+    color: #d96690a1;
 }
 
 footer {
- background-color: #D96690;
+    background-color: #D96690;
+     padding-top: 30px;
+       padding-bottom: 20px;
+       color: #fefefe;
+       font-weight: 700;
 }
 
-.contenido-tabla{
-
- padding-top: 10%;
+.contenido-tabla {
+    padding-top: 10%;
 }
-
